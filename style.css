@@ -5,8 +5,8 @@
 
 .board {
     border: 3px solid black;
-    height: 75vw;
-    width: 75vw;
+    height: 50vw;
+    width: 50vw;
     display: grid;
     justify-content: stretch;
 }
