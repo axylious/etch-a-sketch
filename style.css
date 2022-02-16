@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.board {
+    border: 3px solid black;
+    height: 1000px;
+    width: 1000px;
+    display: grid;
+    justify-content: stretch;
+}
+
+.block {
+    border: 1px solid black;
+    transition: 250ms ease-in;
+}
+
+#container {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+button {
+    width: 25%;
+    font-size: 1.5em;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    transition: 250ms ease-in;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
