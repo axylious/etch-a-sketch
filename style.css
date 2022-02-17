@@ -16,6 +16,10 @@
     transition: 250ms ease-in;
 }
 
+.grid {
+    border: none;
+}
+
 #container {
     display: flex;
     gap: 1em;
@@ -23,6 +27,12 @@
     justify-content: center;
     align-items: center;
     margin: 2em;
+}
+
+#options {
+    display: flex;
+    width: 75vh;
+    justify-content: space-between;
 }
 
 button {
@@ -38,3 +48,9 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+#slider{
+
+}
+
+#size {width: 100%;}

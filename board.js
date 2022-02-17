@@ -49,3 +49,10 @@ function clearForm() {
     removeBoard()
     createBoard(num)
 }
+
+function toggleGrid() {
+    const blocks = document.getElementsByClassName('block')
+    Object.values(blocks).forEach(block => {
+        block.classList.toggle('grid')
+    })
+}
