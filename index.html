@@ -11,10 +11,12 @@
 <body>
     <div id="container">
         <div id="options">
-            <button onclick='clearForm()'>CLEAR</button>
+            <button onclick=''>SOLID COLOR</button>
+            <input type="color" id="color" name="color">
+            <button onclick=''>RAINBOW</button>
             <button onclick='toggleGrid()'>GRID ON</button>
+            <button onclick='clearForm()'>CHANGE SIZE</button>
             <div id="slider">
-                <span>Change size</span>
                 <input type="range" id="size" name="size" min="1" max="100">
                 <span id="dimensions"></span>
             </div>

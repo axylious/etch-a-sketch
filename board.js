@@ -1,8 +1,12 @@
 const board = document.createElement('div')
 board.className = 'board'
 
+const slider = document.querySelector('#size')
+const dimensions = document.getElementById('dimensions')
+dimensions.innerText = `${slider.value}x${slider.value}`
+
 function createBoard(num) {
-    const boardSize = num || 16
+    const boardSize = num || getSize()
     
     const container = document.getElementById('container')
     const docFrag = document.createDocumentFragment()
@@ -40,14 +44,13 @@ function fillBlock(e) {
     this.style['background-color'] = 'black'
 }
 
-function clearForm() {
-    let num = 0
-    do {
-        num = Number(window.prompt('Please enter a number:', '[1-100]'))
-    } while(num<1 || num>100)
+function fillSolid() {
+    this.style['background-color'] 
+}
 
+function clearForm() {
     removeBoard()
-    createBoard(num)
+    createBoard(getSize())
 }
 
 function toggleGrid() {
@@ -56,3 +59,12 @@ function toggleGrid() {
         block.classList.toggle('grid')
     })
 }
+
+function getSize() {
+    slider.addEventListener('input', () => {
+        let num = slider.value
+        dimensions.innerText = `${num}x${num}`
+    })
+    return slider.value
+}
+getSize()

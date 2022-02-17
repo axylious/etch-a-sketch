@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .board {
@@ -23,7 +24,6 @@
 #container {
     display: flex;
     gap: 1em;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2em;
@@ -31,12 +31,14 @@
 
 #options {
     display: flex;
-    width: 75vh;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 75vh;
+    width: 25%;
+    justify-content: space-around;
 }
 
 button {
-    width: 25%;
+    width: 75%;
     font-size: 1.5em;
     border: 3px solid black;
     border-radius: 10px;
@@ -49,8 +51,15 @@ button:hover {
     color: white;
 }
 
-#slider{
-
+span {
+    font-size: 1.5em;
 }
 
-#size {width: 100%;}
+#slider{
+    width: 75%;
+}
+
+#size {
+    width: 100%;
+    margin: 1em 0;
+}
